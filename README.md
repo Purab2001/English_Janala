@@ -120,7 +120,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Abir Shahadat Purab
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abir-shahadat-purab-672bab343/)
 
-Project Link: [https://github.com/abirpurab/english-janala](https://github.com/abirpurab/english-janala)
+Project Link: [purab2001.github.io/English_Janala/](purab2001.github.io/English_Janala/)
 
 ## 🙏 Acknowledgments
 
