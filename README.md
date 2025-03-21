@@ -88,11 +88,6 @@ English Janala is an interactive web platform designed to make English learning 
 - Interactive buttons and cards
 - Smooth scrolling navigation
 
-## 🎨 Design
-
-The UI/UX design for this project was created in Figma. You can view the complete design here:
-[English Janala Figma Design](https://www.figma.com/design/av5VTWIEzejyv5XoDDpPtA/English-Janala?node-id=0-1&p=f&t=NQXDtWUioq3Dp4Bg-0)
-
 ## 🎨 Customization
 
 The project uses Tailwind CSS for styling. To modify the styles:
