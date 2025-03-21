@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English Janala</title>
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <!-- Tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/51319feb02.js" crossorigin="anonymous"></script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <style>
+    .poppins {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .hind-siliguri {
+      font-family: "Hind Siliguri", sans-serif;
+    }
+
+    .active {
+      background-color: #422ad5;
+      color: white;
+    }
+
+    .active i {
+      color: white;
+    }
+  </style>
+</head>
+
+<body class="poppins">
+  <!-- Navbar -->
+  <nav id="navbar" class="sticky top-0 z-50 hidden">
+    <div class="navbar bg-[#F8F8F8] shadow-sm px-4 md:px-20">
+      <div class="navbar-start">
+        <a class="font-semibold text-xl flex items-center"><span class="hidden md:block">English</span> <img src="assets/logo.png"> <span class="hind-siliguri hidden md:block">জানালা</span></a>
+      </div>
+      <div class="navbar-end">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow right-0 max-w-[30vw] transform translate-x-0">
+            <li><a onclick="scrollToSection()" class="btn btn-outline btn-primary group"><i class="fa-solid fa-circle-question text-[#422AD5] group-hover:text-white"></i> <span class="group-hover:text-white">FAQ</span></a></li>
+            <li class="my-2"><a onclick="scrollToSection()" class="btn btn-outline btn-primary group"><i class="fa-solid fa-book-open text-[#422AD5] group-hover:text-white"></i> <span class="group-hover:text-white">Learn</span></a></li>
+            <li><a onclick="logout()" class="btn btn-outline btn-primary group"><i class="fa-solid fa-arrow-right-from-bracket text-[#422AD5] group-hover:text-white"></i> <span class="group-hover:text-white">Logout</span></a></li>
+          </ul>
+        </div>
+        <div class="flex space-x-4">
+          <button onclick="scrollToSection('faq')" class="btn btn-outline btn-primary group hidden md:block"><i class="fa-solid fa-circle-question text-[#422AD5] group-hover:text-white"></i> <span class="group-hover:text-white">FAQ</span></button>
+          <button onclick="scrollToSection('learn')" class="btn btn-outline btn-primary group hidden md:block"><i class="fa-solid fa-book-open text-[#422AD5] group-hover:text-white"></i> <span class="group-hover:text-white">Learn</span></button>
+          <button onclick="logout()" class="btn btn-outline btn-primary group hidden md:block"><i class="fa-solid fa-arrow-right-from-bracket text-[#422AD5] group-hover:text-white"></i> <span class="group-hover:text-white">Logout</span></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main class="px-4 md:px-20">
+    <!-- Login -->
+    <section id="login" class="flex flex-col md:flex-row py-20 items-center">
+      <div class="md:w-2/3">
+        <h1 class="font-bold text-5xl"><span class="text-[#00BCFF]">English</span> is Easy!!</h1>
+        <p class="hind-siliguri font-medium text-2xl py-6">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+        <div class="flex flex-col space-y-5">
+          <label class="input validator">
+            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></g></svg>
+            <input id="username" type="input" required placeholder="Username" />
+          </label>
+          <label class="input validator">
+            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"></path><circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle></g></svg>
+            <input id="password" type="password" required placeholder="Password (123456)" minlength="6" />
+          </label>
+          <div>
+            <button onclick="login()" class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="assets/hero-student.png" alt="">
+      </div>
+    </section>
+    <!-- Learn -->
+    <section id="learn" class="my-48 hidden">
+      <h1 class="font-bold text-4xl text-center"><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies</h1>
+      <div id="category-container" class="flex flex-wrap gap-5 p-10 justify-center"></div>
+      <div id="default"></div>
+      <div id="cardsContainer" class="hidden"></div>
+    </section>
+    <!-- Faq -->
+    <section id="faq" class="my-48 hidden">
+      <h1 class="font-bold text-4xl text-center pb-20"><span class="text-[#00BCFF]">Frequently</span> Asked Questions</h1>
+      <div class="flex flex-col space-y-5">
+        <!-- Question 1 -->
+        <div class="collapse collapse-plus bg-[#F8F8F8]">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title font-medium">
+            1. What is the difference between var, let, and const?
+          </div>
+          <div class="collapse-content text-gray-600">
+            `var` is function-scoped and allows to be reassigned. It is a hoisted variable and can be used prior to its declaration, showing an `undefined` value. On the other hand, `let` is block-scoped as well, so it is also allow to be reassigned, but hoisting it doesn't initialize it and this is a cause of `ReferenceError` during an early access. `const` is also a block-scoped variable, like `let`, but it does not allow to be reassigned and besides, like `let`, it is not initialized when hoisted so that in case of accessing it before the declaration there will be a `ReferenceError`.Overall, `var` is best for function scope, while `let` and `const` are better for block scope, with `const` giving immutability.
+          </div>
+        </div>
+        <!-- Question 2 -->
+        <div class="collapse collapse-plus bg-[#F8F8F8]">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title font-medium">
+            2. What is the difference between map(), forEach(), and filter()?
+          </div>
+          <div class="collapse-content text-gray-600">
+            In JavaScript, the `map()`, `forEach()`, and `filter()` methods are processed by using arrays. The `map()` method generates a new array by utilizing a function to all the elements of the original array. Unlike `map()`, `forEach()` works by running the given function once for each item of the array and does not give back a new array. The `filter()` method is used to create a new array containing the elements that meet the test function criterion. In brief, `map()` and `filter()` are functions that create new arrays, `map()` is used for changing elements and `filter()` is used for choosing elements, while `forEach()` does an operation on each element without returning a new array.
+          </div>
+        </div>
+        <!-- Question 3 -->
+        <div class="collapse collapse-plus bg-[#F8F8F8]">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title font-medium">
+            3. What are arrow functions and how are they different from
+            regular functions?
+          </div>
+          <div class="collapse-content text-gray-600">
+            Arrow functions, which are a feature of ES6, have the syntax for functions in JavaScript that is most concise. In contrast to general functions, an arrow function has no `this` context of its own; it inherits `this` from the outer scope. For this reason, they are very practical for the purpose of holding the context in callbacks and event handlers. Unlike using constructors, arrow functions are not able to do this and there is no `arguments` object associated with them. From the perspective of syntax, they are shorter and tend to be more expressive. For example, `const add = (a, b) => a + b;` is an arrow function definition; whereas a classical function would be `function add(a, b) { return a + b; }`.
+          </div>
+        </div>
+        <!-- Question 4 -->
+        <div class="collapse collapse-plus bg-[#F8F8F8]">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title font-medium">
+            4. How do JavaScript Promises work?
+          </div>
+          <div class="collapse-content text-gray-600">
+            Promises in JavaScript are the ones that indicate either the asynchronous operation has been accomplished or failed and what is that operation's result. Firstly, a Promise can either be in a state of pending, fulfilled, or rejected. The moment a promise is generated, it is in the pending state. When the matter in doubt regarding the asynchronous operation is solved and the proposition is either confirmed (by a specific value) or withdrawn (by a certain reason), the promise thus achieves the state. Promises use `.then()` for fulfillment managing, `.catch()` for rejections handling, and `.finally()` for code that runs right no matter if the outcome is good or bad. This is necessary not for just but also for effective coding because it makes the handling of asynchronous operations both clearer than traditional callback methods and more manageable.
+          </div>
+        </div>
+        <!-- Question 5 -->
+        <div class="collapse collapse-plus bg-[#F8F8F8]">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title font-medium">
+            5. How does closure work in JavaScript?
+          </div>
+          <div class="collapse-content text-gray-600">
+            JavaScript defines a closure as a function that is in a functional scope relative to another function and has access to the outer function's variables after the outer function has executed. This is due to the inner function that keeps a reference to the variables in its lexical scope. Closures allow data to be encapsulated and create private variables that are necessary to keep the state and prevent global variable conflicts. For instance, the functions created in looping can individually remember their own scope thus reflecting the effectiveness and versatility of closures in controlling scope and state in JavaScript.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+   <footer class="footer sm:footer-horizontal bg-white border-t-2 border-[#FFEBEB] px-4 md:px-20 py-24 justify-between">
+    <div>
+      <p class="font-semibold flex items-center text-xl mb-5">English<img src="assets/logo.png"><span class="hind-siliguri">জানালা</span></p>
+      <h4 class="hind-siliguri font-medium text-xl">ইংরেজি শিখুন সহজে</h4>
+      <h5>Providing ED-Tech Applications since 2025</h5>
+    </div>
+    <nav class="pt-16">
+      <h6 class="footer-title">Follow us</h6>
+      <div class="grid grid-flow-col gap-4">
+        <a href="https://www.facebook.com/profile.php?id" target="_blank">
+          <i class="fa-brands fa-facebook fa-xl"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <i class="fa-brands fa-youtube fa-xl"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fa-brands fa-instagram fa-xl"></i>
+        </a>
+      </div>
+    </nav>
+   </footer>
+
+  <!-- Sweet Alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="scripts/index.js"></script>
+
+  <!-- Word Details Modal -->
+  <dialog id="word-details-modal" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box">
+      <div id="modal-content"></div>
+      <div class="modal-action justify-start">
+        <form method="dialog">
+          <button class="btn btn-primary rounded-lg">Complete Learning</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+</body>
+
+</html>
