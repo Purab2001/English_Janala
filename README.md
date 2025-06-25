@@ -1,5 +1,7 @@
 # 🎓 English Janala - Your Gateway to English Learning 🌟
 
+🌐 **Live Demo:** [https://purab2001.github.io/English_Janala/](https://purab2001.github.io/English_Janala/)
+
 [![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://github.com/abirpurab/english-janala)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![DaisyUI](https://img.shields.io/badge/DaisyUI-5A0EF8?style=flat&logo=daisyui&logoColor=white)](https://daisyui.com/)
