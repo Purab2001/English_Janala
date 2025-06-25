@@ -1,8 +1,6 @@
 # 🎓 English Janala - Your Gateway to English Learning 🌟
 
-🌐 **Live Demo:** [https://purab2001.github.io/English_Janala/](https://purab2001.github.io/English_Janala/)
-
-[![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://github.com/abirpurab/english-janala)
+[![Live Demo](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://purab2001.github.io/English_Janala)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![DaisyUI](https://img.shields.io/badge/DaisyUI-5A0EF8?style=flat&logo=daisyui&logoColor=white)](https://daisyui.com/)
 [![Figma Design](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)](https://www.figma.com/design/av5VTWIEzejyv5XoDDpPtA/English-Janala?node-id=0-1&p=f&t=NQXDtWUioq3Dp4Bg-0)
